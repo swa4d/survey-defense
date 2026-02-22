@@ -1,0 +1,2 @@
+Date,Category,Tool_Type,Tool_Name,Model_Name,Input_Tokens,Output_Tokens,Usage_Units,Actual_Cost_USD,Hypothetical_Cost_USD,Notes
+2026-02-19,fixed,model,GPT-5.2,gpt-5.2,9000,50000,,0,1,Tokens and costs are estimates.

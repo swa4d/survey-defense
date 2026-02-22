@@ -1,0 +1,155 @@
+══════════════════════════════════════════════════════════════
+  BOT DETECTION SYSTEM
+══════════════════════════════════════════════════════════════
+Loading Hackathon_Base_Survey_D03_February 21, 2026_12.01.csv...
+  Rows: 444  |  Columns: 386
+
+Mode: Fit-and-score on 'Hackathon_Base_Survey_D03_February 21, 2026_12.01.csv'
+Threshold: 0.5  (responses with P(bot) ≥ 0.5 → BOT)
+
+══════════════════════════════════════════════════════════════
+  RUNNING PIPELINE
+══════════════════════════════════════════════════════════════
+
+Fitting and scoring...
+============================================================
+FITTING BOT DETECTION PIPELINE  v2
+============================================================
+
+[1/6] Engineering features...
+      Generated 42 features for 444 responses
+
+[2/6] Computing heuristic subscores...
+
+[3/6] Generating pseudo-labels...
+      Bot: 73, Human: 178, Uncertain: 193
+      Label coverage: 56.5%
+
+[4/6] Fitting anomaly detector...
+
+[5/6] Training supervised classifier...
+      Trained on 251 samples (73 bots, 178 humans)
+
+[6/6] Fitting meta-classifier...
+
+✓ Pipeline fitted successfully
+
+══════════════════════════════════════════════════════════════
+  SAVING OUTPUT
+══════════════════════════════════════════════════════════════
+  Scores saved:  Hackathon_Base_Survey_D03_February 21, 2026_12.01_scored.csv
+  Merged saved:  Hackathon_Base_Survey_D03_February 21, 2026_12.01_scored_merged.csv
+
+══════════════════════════════════════════════════════════════
+  DETECTION SUMMARY
+══════════════════════════════════════════════════════════════
+  Responses scored:              444
+  Flagged as BOT:                147  (33.1%)
+  Flagged as HUMAN:              297  (66.9%)
+  High-confidence (>0.8):        343  (77.3%)
+  Mean bot probability:          0.336
+  Processing time:               2.2s  (201 responses/sec)
+
+══════════════════════════════════════════════════════════════
+  SUBSCORE AVERAGES  (bots vs humans)
+══════════════════════════════════════════════════════════════
+  automation risk        BOT: 0.016   HUMAN: 0.014
+  behavioral risk        BOT: 0.209   HUMAN: 0.063
+  duplication risk       BOT: 0.473   HUMAN: 0.105
+  anomaly risk           BOT: 0.426   HUMAN: 0.383
+
+══════════════════════════════════════════════════════════════
+  CONFIDENCE DISTRIBUTION
+══════════════════════════════════════════════════════════════
+  <0.5 (uncertain)             18  █
+  0.5–0.7 (low)                49  ████
+  0.7–0.8 (moderate)           34  ███
+  0.8–0.9 (high)              116  ██████████
+  0.9–1.0 (very high)         227  ████████████████████
+
+══════════════════════════════════════════════════════════════
+  TOP 10 MOST LIKELY BOTS
+══════════════════════════════════════════════════════════════
+
+  ResponseId: R_7nxiiSqSGlCPKOP
+    Bot probability : 0.9505  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.505  ██████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.643  ████████████
+
+  ResponseId: R_6s0vfed56kCK9qy
+    Bot probability : 0.9505  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.516  ██████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.600  ████████████
+
+  ResponseId: R_7jtECDcyTOUfYcN
+    Bot probability : 0.9503  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.430  ████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.616  ████████████
+
+  ResponseId: R_52CkOCckMY0XyP7
+    Bot probability : 0.9503  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.449  ████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.548  ██████████
+
+  ResponseId: R_1JaNnoQkiSUfC5p
+    Bot probability : 0.9503  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.427  ████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.612  ████████████
+
+  ResponseId: R_1iKynHMs6HQocgo
+    Bot probability : 0.9503  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.423  ████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.580  ███████████
+
+  ResponseId: R_3lEvwBfiHIXW3Vo
+    Bot probability : 0.9503  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.424  ████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.576  ███████████
+
+  ResponseId: R_7saVliZ7ZHVmQfD
+    Bot probability : 0.9503  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.430  ████████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.528  ██████████
+
+  ResponseId: R_5lPmnFEZVImm7eu
+    Bot probability : 0.9499  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.250  █████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.581  ███████████
+
+  ResponseId: R_3OdnglmmRWcNC28
+    Bot probability : 0.9499  |  Confidence: 0.90
+    automation_risk       : 0.000  
+    behavioral_risk       : 0.237  ████
+    duplication_risk      : 0.800  ████████████████
+    anomaly_risk          : 0.565  ███████████
+
+══════════════════════════════════════════════════════════════
+  SIGNAL AGREEMENT  (quality indicator)
+══════════════════════════════════════════════════════════════
+  Strong multi-signal BOT:         0.0%
+  Strong multi-signal HUMAN:       70.3%
+  Contradictory signals:           29.1%
+  Mean confidence:                 0.846
+
+  ⚠  29% of responses have contradictory signals.
+     Consider reviewing flagged responses manually.
+
+  Done. Output: Hackathon_Base_Survey_D03_February 21, 2026_12.01_scored.csv
